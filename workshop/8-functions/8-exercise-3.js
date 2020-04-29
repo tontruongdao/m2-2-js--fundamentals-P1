@@ -6,4 +6,11 @@ function calculateAverage(a, b, c, d, e) {
   // Your code here
 }
 
+function calculateAverage(a, b, c, d, e) {
+  let sum = a + b + c + d + e;
+  let avg = sum / 5;
+  let avgRounded = Math.round(avg);
+  console.log(avgRounded);
+}
+
 console.log(calculateAverage(76, 60, 83, 100, 78));

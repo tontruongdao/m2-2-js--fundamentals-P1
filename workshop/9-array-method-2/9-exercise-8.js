@@ -15,11 +15,20 @@ function allLong(lst) {
   // lst is an array of strings
 }
 
-console.log('Q8 - case 1', allLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q8 - case 1", allLong(["Scott", "Bob", "Ric", "Jim"]));
 // Should be false
 
 console.log(
-  'Q8 - case 2',
-  allLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
+  "Q8 - case 2",
+  allLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
 // Should be true
+
+// Solution***
+let name = ["Scott", "Bob", "Ric", "Jim"];
+let name2 = ["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"];
+function tester(number) {
+  return number.length > 4;
+}
+console.log(name.every(tester));
+console.log(name2.every(tester));

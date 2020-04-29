@@ -19,7 +19,33 @@ function charCount(str) {
   return str.length;
 }
 console.log(
-  'Q7: ',
-  map(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'], charCount)
+  "Q7: ",
+  map(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"], charCount)
 );
-console.log('Q7: ', map(['Scott', 'Bob', 'Ric', 'Jim'], charCount));
+console.log("Q7: ", map(["Scott", "Bob", "Ric", "Jim"], charCount));
+
+// Solution1
+let t = ["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"];
+let tNew = [];
+function newName(array) {
+  for (let i = 0; i < t.length; i++) {
+    console.log(i);
+    console.log(t[i].length);
+    tNew.push(t[i].length);
+  }
+}
+newName(t);
+tNew;
+
+// Solution2
+
+let r = ["Scott", "Bob", "Ric", "Jim"];
+let rNew = [];
+function newName1(array) {
+  for (let i = 0; i < r.length; i++) {
+    rNew.push(r[i].length);
+  }
+}
+// Call Function
+newName1(r);
+console.log(rNew);

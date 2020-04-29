@@ -22,9 +22,23 @@ function keepLong(str) {
   return str.length > 5;
 }
 console.log(
-  'Q8: ',
+  "Q8: ",
   filter(
-    ['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'],
+    ["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"],
     keepLong
   )
 );
+
+// Solution***
+let t = ["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"];
+let tNew = [];
+function newName(array) {
+  for (let i = 0; i < t.length; i++) {
+    if (t[i].length > 5) {
+      tNew.push(t[i]);
+    }
+  }
+}
+// Call Function
+newName(t);
+console.log(tNew);

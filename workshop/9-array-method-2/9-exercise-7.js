@@ -17,4 +17,15 @@ function greetLong(lst) {
   // lst is an array of strings
 }
 // -------------------------------------------------------------------------
-console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q7 greetLong()", greetLong(["Scott", "Bob", "Ric", "Jim"]));
+
+// Solution***
+let lst = ["Scott", "Bob", "Ric", "Jim"];
+function keepLong(lst) {
+  return lst.filter((word) => word.length > 3);
+}
+let longName = keepLong(lst);
+function helloName() {
+  return longName.map((i) => "Hello " + i);
+}
+console.log(helloName(longName));

@@ -16,4 +16,12 @@ function greet(lst) {
   // lst is an array of strings
 }
 
-console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
+console.log("Q6 greet()", greet(["David", "Billy", "Lisa", "Jennifer"]));
+
+// Solution****
+//
+let lst = ["David", "Billy", "Lisa", "Jennifer"];
+function helloName() {
+  return lst.map((i) => "Hello " + i);
+}
+console.log(helloName(lst));

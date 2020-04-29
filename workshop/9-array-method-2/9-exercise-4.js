@@ -16,7 +16,19 @@ function removeEvens(lst) {
 }
 
 console.log(
-  'Q4 removeEvens()',
+  "Q4 removeEvens()",
   removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 );
 // should log [1, 3, 5, 7, 9, 11]
+
+// Solution***
+let lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+function removeEvens(lst) {
+  if (lst % 2 === 0) return false;
+  else {
+    return true;
+  }
+}
+
+let filtered = lst.filter(removeEvens);
+console.log(filtered);

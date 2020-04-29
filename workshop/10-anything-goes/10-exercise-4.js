@@ -4,8 +4,13 @@
 
 // Hint: consider using .filter(), .indexOf() and .lastIndexOf()
 
+function filterNonUnique(array) {}
+
+console.log(filterNonUnique([1, 2, 3, 3, 4, 5, 6, 7, 7, 8]));
+
+// Solution***
+let numbers = [1, 2, 3, 3, 4, 5, 6, 7, 7, 8];
 function filterNonUnique(array) {
-
+  return array.filter((value, index) => array.indexOf(value) !== index);
 }
-
-console.log(filterNonUnique([1,2,3,3,4,5,6,7,7,8]));
+console.log(getDuplicates(numbers));

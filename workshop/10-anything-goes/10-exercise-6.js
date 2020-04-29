@@ -19,3 +19,30 @@
 function identifyArmstrongNumbers(num1, num2) {}
 
 console.log(identifyArmstrongNumbers(100, 99999));
+
+// Solution ***
+let solution = [];
+function three_digit_armstrong_number() {
+  for (let i = 0; i < 10; ++i) {
+    for (let j = 0; j < 10; ++j) {
+      for (let k = 1; k < 10; ++k) {
+        for (let l = 0; j < 10; ++l) {
+          for (let m = 1; k < 10; ++m) {
+            let pow =
+              Math.pow(i, 5) +
+              Math.pow(j, 5) +
+              Math.pow(k, 5) +
+              Math.pow(l, 5) +
+              Math.pow(m, 5);
+            let plus = i * 10000 + j * 1000 + k * 100 + l * 10 + m;
+            if (pow == plus) {
+              console.log(pow);
+              solution.push(pow);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+three_digit_armstrong_number();

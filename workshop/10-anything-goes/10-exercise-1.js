@@ -4,14 +4,21 @@
 // The first character has position 0, which causes the last one to be found at position string.length - 1.
 // In other words, a two-character string has length 2, and its characters have positions 0 and 1.
 
-
 // Q1
 // Write a function countBs that takes a string as its only argument
 // and returns a number that indicates how many uppercase “B”
 // characters there are in the string.
 
 function countBs(str) {
-
+  let i = 0;
+  let sum = 0;
+  while (i <= str.length) {
+    if (str[i] === "B") {
+      sum += 1;
+    }
+    i = i + 1;
+  }
+  console.log(sum);
 }
 // -------------------------------------------------------------------------
-console.log('Q1: ', countBs('BananaBabyBubbles'));
+console.log("Q1: ", countBs("BananaBabyBubbles"));

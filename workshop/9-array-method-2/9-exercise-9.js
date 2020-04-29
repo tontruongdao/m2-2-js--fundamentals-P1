@@ -18,3 +18,10 @@
 function calculateAverage(grades) {}
 
 console.log(calculateAverage([76, 60, 83, 100, 78]));
+
+// Solution***
+
+let values = [76, 60, 83, 100, 78];
+let sum = values.reduce((previous, current) => (current += previous));
+let avg = sum / values.length;
+console.log(Math.round(avg));
